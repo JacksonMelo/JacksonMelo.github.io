@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Meu primeiro Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="jumbotron " style="background-color: red !important"> 
+	<h1 class="text-aling text-center">
+	Alo HA Mundo! 
+</h1>
+</div>
+	<h2>Carrossel</h2>
+<!-- inicio -->
+
+<div class="container">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens/ar.jpg" class="d-block w-100" alt="ar">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>grande paisagem</h5>
+          <p>grande nuvens e muita altura</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/sol.jpg" class="d-block w-100" alt="sol">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>o sol </h5>
+          <p>e mi ilumina</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/terra.jpg" class="d-block w-100" alt="terra">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>terra </h5>
+          <p>grandes montanhas </p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Proxima</span>
+    </a>
+  </div>
+</div>
+
+<!-- final -->
+<div>
+	<h2>Coluna</h2>
+<div class="row">
+        <div class="c01">
+		
+			<div class="collapse" id="col1"> <h3 class="text-center bg-success">Coluna 1 <p>texto coluna 1</p></h3><img src="imagens/ar.jpg" class="img-fluid rounded-circle"></div>
+		</div>
+		<button class="btn btn-success" data-target="#col1" data-toggle="collapse">
+			Mostrar
+		</button>
+
+
+		<div class="c01">
+	
+			<div class="collapse" id="col12"> <h3 class="text-center bg-success">Coluna 2 <p>texto coluna 2</p></h3><img src="imagens/sol.jpg" class="img-fluid rounded-circle"></div>
+		</div>
+		<button class="btn btn-success" data-target="#col12" data-toggle="collapse">
+			Mostrar
+		</button>
+
+			<div class="c01">
+		
+			<div class="collapse" id="col13"> <h3 class="text-center bg-success">Coluna 3 <p>texto coluna 3</p></h3><img src="imagens/terra.jpg" class="img-fluid rounded-circle"></div>
+		</div>
+		<button class="btn btn-success" data-target="#col13" data-toggle="collapse">
+			Mostrar
+		</button>
+		</div><!-- fim do row -->
+	</div>
+</div><!-- fim conteiner  -->
+
+<div class="alert alert-dark">
+<h2>Collapse</h2>
+<div id="escondidinho" class="collapse">
+<p class="alert alert-warning">Aparecer e Desaparece</p></div>
+
+
+<button data-toggle="collapse" data-target="#escondidinho">Mostrar</button>
+</div>
+
+
+<!-- javascript para o boostrap -->
+
+<script type="text/javascript" src="javascript/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+</body>
+</html>
