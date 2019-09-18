@@ -3,6 +3,7 @@
 let imagemDaEstrada;
 let imagemDoAtor;
 let imagemDoCarro = [];
+let imagemDoAtor2;
 
 let trilhaSonora;
 let somcolidiu;
@@ -15,6 +16,7 @@ function preload(){
   //Pré-carregamento das imagens nas variáveis
   imagemDaEstrada = loadImage("imagens/estrada.png");
   imagemDoAtor = loadImage("imagens/ator-1.png");
+  imagemDoAtor2 = loadImage("imagens/ator-1-1.png");
   imagemDoCarro[0] = loadImage("imagens/carro-1.png");
   imagemDoCarro[1] = loadImage("imagens/carro-2.png");
   imagemDoCarro[2] = loadImage("imagens/carro-3.png");
